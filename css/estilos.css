@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.logo {
+  padding: 5px;
+  background-color: rgb(85, 29, 85);
+  margin-top: 0.1rem;
+}
+
+.nav-link {
+  color: rgb(85, 29, 85) !important;
+  font-size: 1.25rem !important;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: rgb(201, 67, 201) !important;
+}
+
+.container {
+  background: rgb(242, 233, 228);
+}
+
+#home {
+  text-align: right;
+  background-image: url("../images/backgroundimage.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-right: 1.75rem;
+  font-weight: bold;
+  min-height: 100%;
+  padding-top: 55px;
+  margin-top: 0;
+}
+#home h1 {
+  color: rgb(85, 29, 85);
+  font-size: 5rem;
+  padding-top: 12.75rem;
+}
+#home h2 {
+  color: rgb(90, 90, 90);
+  font-size: 2.5rem;
+  padding-top: 2.5rem;
+}
+#home h3 {
+  color: rgb(90, 90, 90);
+  font-size: 1.75rem;
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
+}
+
+.kenburns-top-left {
+  -webkit-animation: kenburns-top-left 3s linear reverse both;
+  animation: kenburns-top-left 3s linear reverse both;
+}
+
+@-webkit-keyframes kenburns-top-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 16%;
+    transform-origin: 16% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, -15px);
+    transform: scale(1.25) translate(-20px, -15px);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+  }
+}
+@keyframes kenburns-top-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 16%;
+    transform-origin: 16% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, -15px);
+    transform: scale(1.25) translate(-20px, -15px);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+  }
+}
+.btn {
+  color: white !important;
+  margin-bottom: 1.25rem;
+  background-color: gray;
+}
+
+main {
+  font-size: 1.25rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(66, 66, 66);
+  background-color: whitesmoke;
+}
+
+.margen {
+  margin-top: 0px;
+  padding-top: 80px;
+}
+
+h1 {
+  color: rgb(85, 29, 85);
+  font-weight: bold;
+  font-size: 1.75rem;
+  padding: 0px 6px 0px 6px;
+  transform: skewX(0);
+  transition: skweX 1s;
+}
+h1:hover {
+  transform: skewX(10deg);
+}
+
+h2,
+h3 {
+  color: rgb(85, 29, 85);
+  font-weight: bold;
+  padding: 0px 6px 0px 6px;
+  transform: skewX(0);
+  transition: skweX 1s;
+}
+h2:hover,
+h3:hover {
+  transform: skewX(10deg);
+}
+
+p {
+  padding: 6px;
+  font-size: 1.25rem;
+}
+
+ul li {
+  padding: 0.5px;
+  font-size: 1.25rem;
+}
+
+.centrado {
+  text-align: center;
+}
+.centrado h2 {
+  margin-top: 3rem;
+}
+
+form {
+  background-color: rgb(242, 233, 228);
+}
+
+input {
+  margin: 0 !important;
+  font-size: 1.25rem !important;
+  border: solid 1px rgb(70, 36, 70);
+  margin: 0 !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(228, 211, 233) !important;
+  padding: 8px !important;
+  border-radius: 5px;
+}
+
+textarea {
+  font-size: 1.25rem !important;
+  border: solid 1px rgb(70, 36, 70);
+  margin: 0.1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(228, 211, 233) !important;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.bi-instagram {
+  font-size: 30px;
+}
+
+footer.btn {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 767px) {
+  /* Celular */
+  #home {
+    padding-right: 0.25rem;
+    margin-top: 78px;
+  }
+  #home h1 {
+    color: rgb(224, 214, 214);
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  #home h2 {
+    color: rgb(224, 214, 214);
+    font-size: 1.5rem;
+  }
+  #home h3 {
+    color: rgb(224, 214, 214);
+    font-size: 1.25rem;
+  }
+
+#contacto {
+margin-top: 25px;
+}
+}
+
+/*# sourceMappingURL=estilos.css.map */
