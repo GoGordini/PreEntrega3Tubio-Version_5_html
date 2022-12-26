@@ -13,7 +13,7 @@
 
 .nav-link {
     color: $color_h1  !important;
-    font-size: $tamano_h1/4 !important;
+    font-size: calc($tamano-h1 / 4) !important;
     font-weight: bold;
 
     &:hover {
@@ -45,7 +45,7 @@
 
     h2 {
         color: $color_h2_h3;
-        font-size: $tamano_h1/2;
+        font-size: calc($tamano-h1 / 2);
         padding-top: 2.5rem;
     }
 
@@ -103,7 +103,7 @@
 }
 
 main {
-    font-size: $tamano_h1/4;
+    font-size: calc($tamano-h1 / 4);
     font-family: $tipo_de_letra;
     color: $color_texto;
     background-color: $color_fondo_main;
@@ -118,7 +118,7 @@ h1 {
     color: $color_h1;
     font-weight: bold;
     font-size: 1.75rem;
-    padding: 0px 6px 0px 6px;
+    padding: 6px 6px 0px 6px;
     transform: skewX(0);
     transition: skweX 1s;
 
@@ -131,7 +131,8 @@ h2,
 h3 {
     color: $color_h1;
     font-weight: bold;
-    padding: 0px 6px 0px 6px;
+    font-size: 1.5rem;
+    padding: 6px 6px 0px 6px;
     transform: skewX(0);
     transition: skweX 1s;
 
@@ -144,19 +145,19 @@ h3 {
 
 p {
     padding: 6px;
-    font-size: $tamano_h1/4;
+    font-size: calc($tamano-h1 / 4);
 }
 
 ul li {
     padding: 0.5px;
-    font-size: $tamano_h1/4;
+    font-size: calc($tamano-h1 / 4);
 }
 
 .centrado {
     text-align: center;
 
     h2 {
-        margin-top: 3rem;
+        margin-top: 0.25rem;
     }
 }
 
@@ -167,7 +168,7 @@ form {
 
 input {
     margin: 0 !important;
-    font-size: $tamano_h1/4 !important;
+    font-size: calc($tamano-h1 / 4) !important;
     border: solid 1px $color_bordes;
     margin: 0 !important;
     font-family: $tipo_de_letra;
@@ -177,7 +178,7 @@ input {
 }
 
 textarea {
-    font-size: $tamano_h1/4 !important;
+    font-size: calc($tamano-h1 / 4) !important;
     border: solid 1px $color_bordes;
     margin: 0.1em;
     font-family: $tipo_de_letra;
@@ -194,9 +195,26 @@ footer.btn {
     margin-bottom: 0 !important;
 }
 
+@media (min-width: 767px) {
+.oculto{
+    display:none;
+}
+.padding_extra{
+    padding-bottom: 10px;
+}
+}
+
 @media (max-width: 767px) {
     /* Celular */
 
+    
+    .centrado {
+        text-align: center;
+    
+        h2 {
+            margin-top: 0.25rem;
+        }
+    }
     #home {
         padding-right: 0.25rem;
         margin-top: 78px;
@@ -204,7 +222,7 @@ footer.btn {
 
     #home h1 {
         color: $color_titulos_mobile;
-        font-size: $tamano_h1/2;
+        font-size: calc($tamano-h1 / 2);
         margin-top: 0px;
         margin-right: 0px;
     }
@@ -216,7 +234,10 @@ footer.btn {
 
     #home h3 {
         color: $color_titulos_mobile;
-        font-size: $tamano_h1/4;
+        font-size: calc($tamano-h1 / 4);
     }
-
+    .container {
+        background: $color_fondo_general;
+    }
+    
 }
